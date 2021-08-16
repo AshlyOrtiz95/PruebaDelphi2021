@@ -1,0 +1,29 @@
+unit dmCliente;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Data.DBXMySQL, Data.FMTBcd,
+  Datasnap.DBClient, SimpleDS, Data.DB, Data.SqlExpr;
+
+type
+  TDataModule1 = class(TDataModule)
+    SQLConnection1: TSQLConnection;
+    SQLQuery1: TSQLQuery;
+    SimpleDataSet1: TSimpleDataSet;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DataModule1: TDataModule1;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.
